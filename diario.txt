@@ -10,3 +10,13 @@ Configurar /etc/sudoers para poder ejecutar comandos como super usuario
 
     # O para un script específico
     tu_usuario ALL=(ALL) NOPASSWD: /ruta/completa/de/tu_script.py
+
+
+Logs donde puede haber información del error:
+
+    # dmesg -> comando que muestra mensajes del sistema
+    -> dmesg 
+    -> dmes | grep rtl8812au
+
+    # journalctl -> query al diario del sistema
+    journalctl --grep=rtl8812au -r
